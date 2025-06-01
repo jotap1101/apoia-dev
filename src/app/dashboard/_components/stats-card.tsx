@@ -22,7 +22,6 @@ export function StatCard({
           <CardTitle className="text-lg font-semibold">{title}</CardTitle>
           <CardDescription className="text-gray-200">{description}</CardDescription>
         </div>
-
         {icon}
       </CardHeader>
       <CardContent>

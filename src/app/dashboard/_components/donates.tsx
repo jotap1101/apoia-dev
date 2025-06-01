@@ -18,7 +18,7 @@ const donations = [
     donorMessage: "Adoro seu trabalho!",
     amount: 1000,
     createdAt: new Date("2023-10-01T12:00:00Z"),
-  },
+  }
 ]
 
 export function DonationTable() {
@@ -74,6 +74,6 @@ export function DonationTable() {
         ))}
       </div>
     </>
-  )
+  );
 }
 

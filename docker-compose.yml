@@ -2,17 +2,13 @@ services:
   db:
     image: postgres:latest
     container_name: apoia-dev-db
-    restart: always
+    restart: "no"
     env_file:
       - .env
     ports:
       - "5432:5432"
     volumes:
-      - db_data:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
+      - apoia_dev_db_data:/var/lib/postgresql/data
 
 volumes:
-  db_data:
+  apoia_dev_db_data:
